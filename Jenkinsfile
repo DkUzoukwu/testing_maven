@@ -11,7 +11,12 @@ pipeline {
                echo "we are doing Test" 
             }
         }
-        stage('Deploy') { 
+        stage('Pre-Deploy') { 
+            steps {
+                echo " This is pre-deploy code " 
+            }
+        }
+         stage('Deploy') { 
             steps {
                 echo " We are going to deploy our code" 
             }
